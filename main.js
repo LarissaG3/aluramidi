@@ -1,14 +1,12 @@
-function tocaSomPom () {
-    document.querySelector('#som_tecla_pom').play();
+function tocaSomPom (idElementoAudio) {
+    document.querySelector(idElementoAudio).play();
 }
 
-const listaDeBotoes = document.querySelectorAll9('.tecla');
-let contador = 0
+const listaDeBotoes = document.querySelectorAll('.tecla');
 
-// Laço de repetição while
-// Repete as intruções do codico ate a comdição ser falsa
+let contador = 0;
+
  while (contador < listaDeBotoes.length) {
-    listaDeBotoes[contador].onclick = tocaSomPom
-    console.log("contador: " + contador);
+    listaDeBotoes[contador].onclick = tocaSom;
     contador += 1;
 }
